@@ -1,0 +1,15 @@
+<div class="inscription-container">
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <p>Vous avez déjà un compte ? <a routerLink="/connexion" routerLinkActive="active">Connectez-vous</a></p>
+      <button type="submit">Inscription</button>
+    </form>
+  </div>
+  

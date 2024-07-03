@@ -1,0 +1,9 @@
+<div class="pokedex-container">
+    <div class="pokemon-card" *ngFor="let pokemon of pokemons">
+      <p>{{ pokemon.name }}</p>
+      <a [routerLink]="['/detail', pokemon.name]">Details</a>
+    </div>
+    
+  </div>
+  <button (click)="loadMore()">Charger plus</button>
+  
